@@ -1,0 +1,45 @@
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+  
+}
+
+/* Ensure Copy/Call action buttons are responsive inside cards */
+.card-actions .flex {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.card-actions .btn {
+  min-width: 0 !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  flex: 1 1 100% !important;
+}
+
+@media (min-width: 768px) {
+  .card-actions .flex {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .card-actions .btn {
+    width: auto !important;
+    max-width: none !important;
+    flex: 0 1 auto !important;
+  }
+
+  .card-actions .btn.btn-outline {
+    flex: 0 0 120px !important;
+    min-width: 120px !important;
+  }
+
+  .card-actions .btn.btn-success {
+    flex: 1 1 auto !important;
+    min-width: 140px !important;
+  }
+}
+
